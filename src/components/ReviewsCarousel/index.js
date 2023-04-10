@@ -51,9 +51,9 @@ class ReviewsCarousel extends Component {
         <h1 className="heading">Reviews</h1>
         <div className="carousel-container">
           <button
+            testid="leftArrow"
             type="button"
             onClick={this.onClickLeftArrow}
-            testid="leftArrow"
             className="arrow-button"
           >
             <img
@@ -63,10 +63,11 @@ class ReviewsCarousel extends Component {
           </button>
           {this.renderActiveReview(currentReviewDetails)}
           <button
+            testid="rightArrow"
             type="button"
             onClick={this.onClickRightArrow}
-            testid="rightArrow"
             className="arrow-button"
+            testid="rightArrow"
           >
             <img
               src="https://assets.ccbp.in/frontend/react-js/right-arrow-img.png"
